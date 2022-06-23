@@ -12,6 +12,7 @@ public class MainViewController {
     public void initialize() {}
 
     public void initSessionID(final LoginManager loginManager, String sessionID) {
+        sessionLabel.setMinHeight(50);
         sessionLabel.setText(sessionID);
         logoutButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent event) {

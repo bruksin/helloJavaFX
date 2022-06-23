@@ -15,10 +15,12 @@
                     <children>
                         <GridPane>
                             <children>
-                                <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-                                <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                                <TextField fx:id="user" promptText="Use &quot;open&quot; to login" text="Smirnov" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-                                <TextField fx:id="password" promptText="Use &quot;sesame&quot; to login" text="SecretWord" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="Логин:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <Label text="Пароль:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                <Label text="Я осознаю все риски" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                <TextField fx:id="user" promptText="Use &quot;Smirnov&quot; to login" text="Smirnov" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                <TextField fx:id="password" promptText="Use &quot;SecretWord&quot; to login" text="SecretWord" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <CheckBox fx:id="agree" mnemonicParsing="false"  GridPane.columnIndex="1" GridPane.rowIndex="3" />
                             </children>
                             <columnConstraints>
                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="109.0" />

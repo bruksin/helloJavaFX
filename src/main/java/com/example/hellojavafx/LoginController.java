@@ -8,6 +8,7 @@ import javafx.scene.control.*;
 public class LoginController {
     @FXML private TextField user;
     @FXML private TextField password;
+    @FXML private CheckBox agree;
     @FXML private Button loginButton;
     private String MyLogin = "Smirnov";
     private String MyPasswd = "SecretWord";
@@ -42,6 +43,12 @@ public class LoginController {
 
     private String generateSessionID() {
         sessionID++;
-        return "Hello " + MyLogin + ". Your - session " + sessionID;
+        if (agree.isSelected()) {
+            return "Привет " + MyLogin + "\nВаша сессия номер " + sessionID + "\nВы осознали риски";
+        }
+        else {
+            return "Привет " + MyLogin + "\nВаша сессия номер " + sessionID + "\nВы не осознали все риски";
+        }
+
     }
 }
