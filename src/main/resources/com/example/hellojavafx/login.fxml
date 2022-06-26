@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<StackPane prefWidth="500.0"  xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.hellojavafx.LoginController">
+<StackPane prefWidth="500.0" prefHeight="300.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.hellojavafx.LoginController">
     <children>
         <StackPane>
             <children>
@@ -33,7 +33,7 @@
                         </GridPane>
                         <StackPane prefHeight="-1.0" prefWidth="-1.0">
                             <children>
-                                <Button fx:id="loginButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Login" StackPane.alignment="CENTER_RIGHT" />
+                                <Button fx:id="loginButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Вход" StackPane.alignment="CENTER_RIGHT" />
                             </children>
                         </StackPane>
                     </children>

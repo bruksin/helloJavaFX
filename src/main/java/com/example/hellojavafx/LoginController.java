@@ -44,10 +44,10 @@ public class LoginController {
     private String generateSessionID() {
         sessionID++;
         if (agree.isSelected()) {
-            return "Привет " + MyLogin + "\nВаша сессия номер " + sessionID + "\nВы осознали риски";
+            return "Привет " + MyLogin + "\nВаша сессия - №" + sessionID + "\nВы осознали риски";
         }
         else {
-            return "Привет " + MyLogin + "\nВаша сессия номер " + sessionID + "\nВы не осознали все риски";
+            return "Привет " + MyLogin + "\nВаша сессия - №" + sessionID + "\nВы не осознали все риски";
         }
 
     }
